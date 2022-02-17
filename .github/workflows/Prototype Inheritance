@@ -1,0 +1,12 @@
+var Parent = function() {};
+Parent.prototype.Father = function() {
+console.log('derp');
+};
+function Child() {
+Parent.cal(this);
+};
+Child.prototype.Father = function() {
+console.log('i did');
+};
+childInstance = new Child();
+childInstance.Father();
