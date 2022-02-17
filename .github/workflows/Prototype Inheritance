@@ -3,7 +3,7 @@ Parent.prototype.Father = function() {
 console.log('derp');
 };
 function Child() {
-Parent.cal(this);
+Parent.call(this);
 };
 Child.prototype.Father = function() {
 console.log('i did');
